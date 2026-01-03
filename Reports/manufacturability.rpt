@@ -1,0 +1,19 @@
+Design Name: counter_up_dwn
+Run Directory: /openlane/designs/counter_up_dwn/runs/RUN_2025.12.31_16.42.11
+----------------------------------------
+
+Magic DRC Summary:
+Source: /openlane/designs/counter_up_dwn/runs/RUN_2025.12.31_16.42.11/reports/signoff/drc.rpt
+Total Magic DRC violations is 0
+----------------------------------------
+
+LVS Summary:
+Source: /openlane/designs/counter_up_dwn/runs/RUN_2025.12.31_16.42.11/logs/signoff/31-counter_up_dwn.lef.lvs.log
+Number of nets: 171                        |Number of nets: 171                        
+Design is LVS clean.
+----------------------------------------
+
+Antenna Summary:
+Source: /openlane/designs/counter_up_dwn/runs/RUN_2025.12.31_16.42.11/logs/signoff/33-arc.log
+Pin violations: 0
+Net violations: 0
