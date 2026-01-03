@@ -1,5 +1,23 @@
 # RTL to GDSII Implementation of a 16-bit Up/Down Counter using OpenLane (Sky130)
 ---
+# Table of Contents
+
+- [Introduction](#introduction)
+- [OpenLane](#openlane)
+- [OpenLane Execution](#openlane-execution)
+- [RTL-to-GDS](#rtl-to-gds-flow)
+   - [Design Specification](#design-specification)
+   - [Environment Setup and Design Preparation](#environment-setup-and-design-preparation)
+   - [Physical Design](#physical-design)
+     - [Synthesis](#synthesis)
+     - [Floorplanning](#floorplanning)
+     - [Placement](#placement)
+     - [Clock Tree Synthesis](#clock-tree-synthesis)
+     - [Timing Optimization](#timing-optimization)
+     - [Routing](#routing)
+  - [Layout Generation and Visualization](#layout-generation-and-visualization)
+  - [Signoff](#signoff)
+- [Conclusion](#conclusion)
 
 ---
 
@@ -37,7 +55,7 @@ This section presents the step-by-step implementation of the 16-bit up/down coun
 It covers environment setup, RTL-to-GDS execution, post-layout verification and final report generation.  
 
 ---
-## 1. Design Specifications
+## 1. Design Specification
 
 This is a **16-bit synchronous up/down counter** with enable and reset signals.  
 The counter increments or decrements on each rising edge of `clk` based on the `ctrl` input when `en` is high.
@@ -63,7 +81,7 @@ The counter increments or decrements on each rising edge of `clk` based on the `
 ![gen_sch](Images/generic_sch.png)  
 
 ---
-## 2. Environment setup & Design preparation step  
+## 2. Environment setup and Design preparation  
 
 This step prepares the OpenLane environment and design workspace,
 ensuring that all necessary packages are loaded and the design
@@ -332,6 +350,8 @@ Detailed implementation metrics are available in the [metrics.csv](Reports/metri
 
 ---
 # Conclusion
+
+Final GDS file: [gds](Results/signoff/counter_up_dwn.gds) 
 
 This project demonstrates a complete RTL-to-GDS implementation of a 16-bit up/down counter using the open-source OpenLane flow and Sky130 PDK. The design successfully progressed through synthesis, physical design, layout generation, and signoff, achieving clean DRC, LVS, antenna, and timing results. Overall, this work provided practical exposure to an end-to-end ASIC digital implementation workflow using open-source EDA tools.
 
