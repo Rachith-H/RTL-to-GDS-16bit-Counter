@@ -17,6 +17,7 @@
      - [Routing](#36-routing)
   - [Layout Generation and Visualization](#4-layout-generation-and-visualization)
   - [Signoff](#5-signoff)
+  - [Final Reports](#6-final-reports)
 - [Conclusion](#conclusion)
 
 ---
