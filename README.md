@@ -69,7 +69,7 @@ The counter increments or decrements on each rising edge of `clk` based on the `
 | `ctrl` | input    | Control signal; `0` → count up, `1` → count down |
 | `count`| output   | 16-bit counter output |
 
- - The output Waveform obtained after simulating the [Counter.v](Verilog%20Files/counter_up_dwn.v) with a testbench [Counter_tb.v](Verilog%20Files/counter_up_dwn_tb.v) confirms correct operation of design. 
+ - The output Waveform obtained after simulating the [Counter.v](Design%20Files/counter_up_dwn.v) with a testbench [Counter_tb.v](Design%20Files/counter_up_dwn_tb.v) confirms correct operation of design. 
 
  
 ![sim](Images/gtkwave_output.png)   
