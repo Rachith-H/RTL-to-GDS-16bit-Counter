@@ -3,7 +3,7 @@
 # Table of Contents
 
 - [Introduction](#introduction)
-- [OpenLane](#openlane)
+- [About OpenLane](#about-openlane)
 - [OpenLane Execution](#openlane-execution)
 - [RTL to GDS](#rtl-to-gds-flow)
    - [Design Specification](#1-design-specification)
@@ -29,7 +29,7 @@ It captures the practical execution of industry-style ASIC steps including synth
 and final GDSII generation using a fully open-source toolchain.  
 
 --- 
-# OpenLane
+# About OpenLane
 OpenLane is an open-source, fully automated RTL-to-GDSII digital ASIC flow built around a collection of industry-relevant EDA tools. It integrates tools such as Yosys for logic synthesis, OpenROAD for floorplanning, placement, clock tree synthesis, and routing, and Magic and KLayout for layout visualization and physical verification.
 
 OpenLane enables the complete implementation of standard-cell based digital designs using open-source PDKs such as Sky130, providing a practical and accessible platform for understanding real-world ASIC design flows.
