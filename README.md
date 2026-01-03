@@ -5,18 +5,18 @@
 - [Introduction](#introduction)
 - [OpenLane](#openlane)
 - [OpenLane Execution](#openlane-execution)
-- [RTL-to-GDS](#rtl-to-gds-flow)
-   - [Design Specification](#design-specification)
-   - [Environment Setup and Design Preparation](#environment-setup-and-design-preparation)
-   - [Physical Design](#physical-design)
-     - [Synthesis](#synthesis)
-     - [Floorplanning](#floorplanning)
-     - [Placement](#placement)
-     - [Clock Tree Synthesis](#clock-tree-synthesis)
-     - [Timing Optimization](#timing-optimization)
-     - [Routing](#routing)
-  - [Layout Generation and Visualization](#layout-generation-and-visualization)
-  - [Signoff](#signoff)
+- [RTL to GDS](#rtl-to-gds-flow)
+   - [Design Specification](#1-design-specification)
+   - [Environment Setup and Design Preparation](#2-environment-setup-and-design-preparation)
+   - [Physical Design](#3-physical-design)
+     - [Synthesis](#31-synthesis)
+     - [Floorplanning](#32-floorplanning)
+     - [Placement](#33-placement)
+     - [Clock Tree Synthesis](#34-clock-tree-synthesis)
+     - [Timing Optimization](#35-timing-optimization)
+     - [Routing](#36-routing)
+  - [Layout Generation and Visualization](#4-layout-generation-and-visualization)
+  - [Signoff](#5-signoff)
 - [Conclusion](#conclusion)
 
 ---
@@ -134,7 +134,7 @@ The images below, captured from **Magic**, show the layout after floorplanning:
 
 
 ---  
-### 3.4 Placement
+### 3.3 Placement
 
 Placement determines the **exact positions of all standard cells** within the core area defined during floorplanning.  
 A good placement ensures **minimal wire length, reduced congestion, and better timing**, which is essential for an efficient and manufacturable design.
@@ -152,7 +152,7 @@ The images below, captured from **Magic**, show the placement of standard cells 
 
 
 ---
-### 3.5 Clock Tree Synthesis 
+### 3.4 Clock Tree Synthesis 
 
 Clock Tree Synthesis (CTS) ensures that the **clock signal reaches all sequential elements** (flip-flops) with minimal **skew and latency**.  
 A balanced clock tree is critical for correct timing and synchronization across the entire chip.
@@ -171,7 +171,7 @@ The images below, captured from **Magic**, includes the clock tree:
 
 
 ---
-### 3.6 Timing Optimization
+### 3.5 Timing Optimization
 
 After placement and clock tree synthesis, the design may have **timing violations** (setup or hold).  
 Timing optimization adjusts the design to **meet timing constraints**, ensuring reliable operation at the target clock frequency.
@@ -205,7 +205,7 @@ worst slack 0.24
 ```
 
 ---
-### 3.7 Routing 
+### 3.6 Routing 
 
 Routing connects all standard cells and macros according to the netlist and placement, creating **physical connections (metal layers) between gates**.  
 A well-optimized routing ensures **minimal congestion, correct signal connectivity, and meets timing requirements**.
